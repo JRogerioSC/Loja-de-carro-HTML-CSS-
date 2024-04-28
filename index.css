@@ -1,0 +1,161 @@
+body{
+    background-image: url(video/fundo\ carro\ black.jpg);
+    color: white;
+}
+
+a{
+    
+    color: blue;
+    text-decoration: none;
+}
+
+nav a:hover {
+
+    color: linen;
+}
+
+
+
+header img {
+    height: 50px;
+    width: 250px;
+    border-radius: 500px;
+    border-color:brown;
+    border: 5px solid bisque;
+    padding: 5px;
+
+}
+
+img{
+
+height: 100%;
+width: 100%;
+
+
+}
+
+ul{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+    list-style-type: none;
+}
+
+
+
+.texto{
+    width: 50px;
+    height: 50px;
+
+    }
+
+.volkswagen{
+    height: 100px;
+    width: 140px;
+    border-radius: 80px;
+    padding: 60px;
+
+}
+
+main{
+    padding: auto;
+    border-radius: auto;
+
+
+    min-width: auto;
+    max-width: auto;
+    margin: auto;
+}
+
+.AVANÇAR{
+color: blue
+
+
+
+}
+
+.menu{
+color: blue;
+min-height: auto;
+width: auto;
+}
+
+
+
+.pagina1{
+width: 10px;
+color: blue;
+font-size: 30px;
+
+}
+
+.VOLTAR{
+    color: blue
+   padding: 10px;
+}
+
+.valor{
+    color: #5BBE42;
+}
+
+.comprar a{
+    color: blue;
+}
+
+.img_venda{
+    height: 80px;
+    width: 95px;
+    border-radius: 20px;
+}
+
+.instagram:hover{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.instagram{
+    color: chartreuse;
+    font-style: oblique;
+}
+
+
+.email{
+    color: darkgoldenrod;
+    font-style: oblique;
+}
+
+.email:hover{
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.aplicativo{
+    height: 30px;
+    width: 30px;
+    border-radius: 500px;
+    padding: 5px;
+    color: sienna;
+    
+    
+}
+.VOLTAR1{
+    color: blue;
+}
+
+.VOLTAR1:hover{
+    color: white;
+}
+
+.whatsapp img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    padding: 10px;
+    position: fixed;
+    z-index: 9999;
+    bottom: 250px;
+    right: 10px;
+}
