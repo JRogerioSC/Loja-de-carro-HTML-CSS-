@@ -12,6 +12,7 @@ a{
 nav a:hover {
 
     color: linen;
+    transition: 1s ease-out;
 }
 
 
@@ -113,6 +114,7 @@ font-size: 30px;
 .instagram:hover{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    transition: 1s ease-out;
 }
 
 .instagram{
