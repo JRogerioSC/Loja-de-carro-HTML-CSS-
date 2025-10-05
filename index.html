@@ -1,386 +1,456 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja</title>
-    <main>
-    
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Carros</title>
 
-    <meta name="google-adsense-account" content="ca-pub-3426255451853182">
-    <meta name="google-site-verification" content="_8S9_o5qPH9CiaCq00ObRyYLTOUJDQGe1aOfrf6IHAQ" />
+  <!-- SEO -->
+  <meta name="description" content="Venda de carros novos e seminovos. Entre em contato antes de efetuar o pagamento.">
+  <meta name="keywords" content="carros, venda de carros, loja de carros, veículos, automóveis">
+  <meta name="author" content="Rogério">
+
+  <!-- Google AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-3426255451853182">
+  <meta name="google-site-verification" content="_8S9_o5qPH9CiaCq00ObRyYLTOUJDQGe1aOfrf6IHAQ" />
+
+  <!-- Estilo -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="video/volkswagen_logo.jpg" type="image/jpeg">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #222;
+    }
+
+    nav {
+      background: #000;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    header {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    header img {
+      width: 90%;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    h4 {
+      color: red;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .volkswagen {
+      display: block;
+      margin: 10px auto 30px;
+      width: 100px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+
+    .whatsapp img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s;
+    }
+
+    .whatsapp img:hover {
+      transform: scale(1.1);
+    }
+
+    .carros {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .carro {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s;
+    }
+
+    .carro:hover {
+      transform: translateY(-5px);
+    }
+
+    .carro img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .valor {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      margin: 10px 0;
+    }
+
+    .comprar a {
+      display: inline-block;
+      background: #008000;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .comprar a:hover {
+      background: #006400;
+    }
+
+    .AVANCAR {
+      display: inline-block;
+      background: #000;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 30px auto;
+    }
+
+    .AVANCAR:hover {
+      background: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      color: #fff;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
 
-    <nav>
-        <ul>
-        <li>
-        <a class="menu" href="menu.html">MENU</a>
-        </li>
-        <li>
-        <center><a class="menu" href="contato.html">CONTATO</a></center>
-        </li>
-        <li>
-        <center><a class="menu" href="sobre.html">SOBRE</a></center>
-        </li>
-        <li>
-            <a class="aplicativo" href="video/1º SITE_1_1.0.apk">APP</a>
-            
-        </li>
-        
-        </ul>
-    
-       
-    </nav>
-
-
-    
-    <header>
-<center><a class="img" href="https://1primeirosite.netlify.app/"><img src="video/carro foto.jpg" alt=""></a></center>
-    </header>
-
-<center><h4>*Antes de efetuar o pagamento entre em Contato com o Vendedor*</h4></center>
-
-<center><img class="volkswagen" src="video/volkswagen_logo.jpg" alt=""></center>
-
-<a class="whatsapp" href="https://wa.link/42kawv"><img src="video/whatsapp.jpg" alt=""></a>
-
-<nav>
+  <nav>
     <ul>
-        <li>
-        <center class="valor" ><R1>R$ 60.380</R1></center>
-        <img class="img_venda" src="video/carro.volkswagen.png" alt="">
-        <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-        </li>
-
-        <li>
-            <center class="valor" ><R1>R$  70.000            </R1></center>
-        <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-        <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-            </li>
-
-            <li>
-                <center class="valor" ><R1>R$ 70.000</R1></center>
-        <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-        <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-                </li>
-
-        
+      <li><a href="menu.html">MENU</a></li>
+      <li><a href="contato.html">CONTATO</a></li>
+      <li><a href="sobre.html">SOBRE</a></li>
+      <li><a href="video/1º SITE_1_1.0.apk">APP</a></li>
     </ul>
+  </nav>
 
+  <header>
+    <a href="https://1primeirosite.netlify.app/">
+      <img src="video/carro foto.jpg" alt="Carro em destaque">
+    </a>
+  </header>
+
+  <h4>*Antes de efetuar o pagamento entre em Contato com o Vendedor*</h4>
+  <img class="volkswagen" src="video/volkswagen_logo.jpg" alt="Logo Volkswagen">
+
+  <a class="whatsapp" href="https://wa.link/42kawv">
+    <img src="video/whatsapp.jpg" alt="WhatsApp">
+  </a>
+
+  <section class="carros">
+    <!-- Exemplo de carro (copie mais blocos se quiser) -->
+    <div class="carro">
+      <div class="valor">R$ 60.380</div>
+      <img src="video/carro.volkswagen.png" alt="Volkswagen">
+      <div class="comprar"><a href="https://livepix.gg/jose21">COMPRAR</a></div>
+    </div>
+
+    <div class="carro">
+      <div class="valor">R$ 70.000</div>
+      <img src="video/carro.demonstracao.jpg" alt="Carro em demonstração">
+      <div class="comprar"><a href="https://livepix.gg/jose21">COMPRAR</a></div>
+    </div>
+
+    <div class="carro">
+      <div class="valor">R$ 70.000</div>
+      <img src="video/carro.demonstracao.jpg" alt="Carro em demonstração">
+      <div class="comprar"><a href="https://livepix.gg/jose21">COMPRAR</a></div>
+    </div>
+  </section>
+
+  <center><a class="AVANCAR" href="pagina2.html">AVANÇAR</a></center>
+
+  <footer>
+    © 2025 Loja de Carros - Todos os direitos reservados.  
+    Desenvolvido por Rogério 🚗
+  </footer>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3426255451853182" crossorigin="anonymous"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Carros</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Venda de carros novos e seminovos. Entre em contato antes de efetuar o pagamento.">
+  <meta name="keywords" content="carros, venda de carros, loja de carros, veículos, automóveis">
+  <meta name="author" content="Rogério">
+
+  <!-- Google AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-3426255451853182">
+  <meta name="google-site-verification" content="_8S9_o5qPH9CiaCq00ObRyYLTOUJDQGe1aOfrf6IHAQ" />
+
+  <!-- Estilo -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="video/volkswagen_logo.jpg" type="image/jpeg">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #222;
+    }
+
+    nav {
+      background: #000;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    header {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    header img {
+      width: 90%;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    h4 {
+      color: red;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .volkswagen {
+      display: block;
+      margin: 10px auto 30px;
+      width: 100px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+
+    .whatsapp img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s;
+    }
+
+    .whatsapp img:hover {
+      transform: scale(1.1);
+    }
+
+    .carros {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .carro {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s;
+    }
+
+    .carro:hover {
+      transform: translateY(-5px);
+    }
+
+    .carro img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .valor {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      margin: 10px 0;
+    }
+
+    .comprar a {
+      display: inline-block;
+      background: #008000;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .comprar a:hover {
+      background: #006400;
+    }
+
+    .AVANCAR {
+      display: inline-block;
+      background: #000;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 30px auto;
+    }
+
+    .AVANCAR:hover {
+      background: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      color: #fff;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
     <ul>
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-            <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-            <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-        </li>
-
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-        <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-        <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-            </li>
-
-            <li>
-                <center class="valor" ><R1>R$ 70.000</R1></center>
-                <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-                <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center> 
-                </li>
-
-       
+      <li><a href="menu.html">MENU</a></li>
+      <li><a href="contato.html">CONTATO</a></li>
+      <li><a href="sobre.html">SOBRE</a></li>
+      <li><a href="video/1º SITE_1_1.0.apk">APP</a></li>
     </ul>
+  </nav>
 
-    <ul>
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-            <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-            <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-        </li>
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-            <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-            <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-            </li>
+  <header>
+    <a href="https://1primeirosite.netlify.app/">
+      <img src="video/carro foto.jpg" alt="Carro em destaque">
+    </a>
+  </header>
 
-            <li>
-                <center class="valor" ><R1>R$ 70.000</R1></center>
-        <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-        <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-                </li>
+  <h4>*Antes de efetuar o pagamento entre em Contato com o Vendedor*</h4>
+  <img class="volkswagen" src="video/volkswagen_logo.jpg" alt="Logo Volkswagen">
 
-       
-    </ul>
+  <a class="whatsapp" href="https://wa.link/42kawv">
+    <img src="video/whatsapp.jpg" alt="WhatsApp">
+  </a>
 
-    <ul>
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-            <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-            <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-        </li>
+  <section class="carros">
+    <!-- Exemplo de carro (copie mais blocos se quiser) -->
+    <div class="carro">
+      <div class="valor">R$ 60.380</div>
+      <img src="video/carro.volkswagen.png" alt="Volkswagen">
+      <div class="comprar"><a href="https://livepix.gg/jose21">COMPRAR</a></div>
+    </div>
 
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-            <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-            <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-            </li>
+    <div class="carro">
+      <div class="valor">R$ 70.000</div>
+      <img src="video/carro.demonstracao.jpg" alt="Carro em demonstração">
+      <div class="comprar"><a href="https://livepix.gg/jose21">COMPRAR</a></div>
+    </div>
 
-            <li>
-                <center class="valor" ><R1>R$ 70.000</R1></center>
-                <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-                <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center> 
-                </li>
+    <div class="carro">
+      <div class="valor">R$ 70.000</div>
+      <img src="video/carro.demonstracao.jpg" alt="Carro em demonstração">
+      <div class="comprar"><a href="https://livepix.gg/jose21">COMPRAR</a></div>
+    </div>
+  </section>
 
-        
-    </ul>
-    <ul>
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-            <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-            <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-        </li>
-       
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-        <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-        <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-            </li>
+  <center><a class="AVANCAR" href="pagina2.html">AVANÇAR</a></center>
 
-            <li>
-                <center class="valor" ><R1>R$ 70.000</R1></center>
-                <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-                <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-                </li>
+  <footer>
+    © 2025 Loja de Carros - Todos os direitos reservados.  
+    Desenvolvido por Rogério 🚗
+  </footer>
 
-        
-    </ul>
-    <ul>
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-            <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-            <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-        </li>
-
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-            <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-            <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-            </li>
-
-            <li>
-                <center class="valor" ><R1>R$ 70.000</R1></center>
-        <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-        <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-                </li>
-
-        
-    </ul>
-
-    <ul>
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-            <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-            <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-        </li>
-
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-        <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-        <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-            </li>
-
-            <li>
-                <center class="valor" ><R1>R$ 70.000</R1></center>
-        <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-        <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-                </li>
-
-       
-    </ul>
-
-    <ul>
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-            <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-            <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-        </li>
-
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-        <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-        <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-            </li>
-
-            <li>
-                <center class="valor" ><R1>R$ 70.000</R1></center>
-                <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-                <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-                </li>
-
-       
-    </ul>
-
-    <ul>
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-            <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-            <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-        </li>
-
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-        <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-        <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-            </li>
-            
-            <li>
-                <center class="valor" ><R1>R$ 70.000</R1></center>
-                <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-                <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-                </li>
-
-        
-    </ul>
-    <ul>
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-            <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-            <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-        </li>
-
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-        <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-        <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-            </li>
-
-            <li>
-                <center class="valor" ><R1>R$ 70.000</R1></center>
-        <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-        <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-                </li>
-
-        
-    </ul>
-
-    <ul>
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-            <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-            <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-        </li>
-
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-        <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-        <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-            </li>
-
-            <li>
-                <center class="valor" ><R1>R$ 70.000</R1></center>
-        <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-        <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-                </li>
-
-        
-    </ul>
-
-    <ul>
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-            <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-            <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-        </li>
-
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-        <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-        <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-            </li>
-
-            <li>
-                <center class="valor" ><R1>R$ 70.000</R1></center>
-        <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-        <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-                </li>
-
-       
-    </ul>
-
-    <ul>
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-            <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-            <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-        </li>
-
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-            <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-            <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-            </li>
-
-            <li>
-                <center class="valor" ><R1>R$ 70.000</R1></center>
-        <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-        <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-                </li>
-
-       
-    </ul>
-
-    <ul>
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-            <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-            <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-        </li>
-
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-        <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-        <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-            </li>
-
-            <li>
-                <center class="valor" ><R1>R$ 70.000</R1></center>
-        <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-        <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-                </li>
-
-        
-    </ul>
-    <ul>
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-            <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-            <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-        </li>
-
-        <li>
-            <center class="valor" ><R1>R$ 70.000</R1></center>
-            <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-            <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-            </li>
-
-            <li>
-                <center class="valor" ><R1>R$ 70.000</R1></center>
-        <img class="img_venda" src="video/carro.demonstracao.jpg" alt="">
-        <center class="comprar" ><a href="https://livepix.gg/jose21">COMPRAR</a></center>
-                </li>
-
-        
-    </ul>
-
-    
-    <center><a class="AVANÇAR" href="pagina2.html">AVANÇAR</a></center>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3426255451853182"
-     crossorigin="anonymous"></script>
-
-     
-    
-</main>
-</nav>
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3426255451853182" crossorigin="anonymous"></script>
 </body>
 </html>
