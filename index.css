@@ -1,10 +1,10 @@
-body{
+body {
     background-image: url(video/fundo\ carro\ black.jpg);
     color: white;
 }
 
-a{
-    
+a {
+
     color: blue;
     text-decoration: none;
 }
@@ -21,21 +21,21 @@ header img {
     height: 50px;
     width: 250px;
     border-radius: 500px;
-    border-color:brown;
+    border-color: brown;
     border: 5px solid bisque;
     padding: 5px;
 
 }
 
-img{
+img {
 
-height: 100%;
-width: 100%;
+    height: 100%;
+    width: 100%;
 
 
 }
 
-ul{
+ul {
 
     display: flex;
     justify-content: space-around;
@@ -46,13 +46,13 @@ ul{
 
 
 
-.texto{
+.texto {
     width: 50px;
     height: 50px;
 
-    }
+}
 
-.volkswagen{
+.volkswagen {
     height: 100px;
     width: 140px;
     border-radius: 80px;
@@ -60,7 +60,7 @@ ul{
 
 }
 
-main{
+main {
     padding: auto;
     border-radius: auto;
 
@@ -70,88 +70,85 @@ main{
     margin: auto;
 }
 
-.AVANÇAR{
-color: blue
-
-
-
-}
-
-.menu{
-color: blue;
-min-height: auto;
-width: auto;
-}
-
-
-
-.pagina1{
-width: 10px;
-color: blue;
-font-size: 30px;
-
-}
-
-.VOLTAR{
+.AVANÇAR {
     color: blue
-   padding: 10px;
 }
 
-.valor{
+.menu {
+    color: blue;
+    min-height: auto;
+    width: auto;
+}
+
+
+
+.pagina1 {
+    width: 10px;
+    color: blue;
+    font-size: 30px;
+
+}
+
+.VOLTAR {
+    color: blue padding: 10px;
+}
+
+.valor {
     color: #5BBE42;
 }
 
-.comprar a{
+.comprar a {
     color: blue;
 }
 
-.img_venda{
+.img_venda {
     height: 80px;
     width: 95px;
     border-radius: 20px;
 }
 
-.instagram:hover{
+.instagram:hover {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     transition: 1s ease-out;
 }
 
-.instagram{
+.instagram {
     color: chartreuse;
     font-style: oblique;
 }
 
 
-.email{
+.email {
     color: darkgoldenrod;
     font-style: oblique;
 }
 
-.email:hover{
-color: white;
-font-family: Arial, Helvetica, sans-serif;
+.email:hover {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
-.aplicativo{
+.aplicativo {
     height: 30px;
     width: 30px;
     border-radius: 500px;
     padding: 5px;
     color: sienna;
-    
-    
+
+
 }
-.VOLTAR1{
+
+.VOLTAR1 {
     color: blue;
 }
 
-.VOLTAR1:hover{
+.VOLTAR1:hover {
     color: white;
 }
 
-.whatsapp img{
+.whatsapp img {
     height: 50px;
     width: 50px;
     border-radius: 50px;
