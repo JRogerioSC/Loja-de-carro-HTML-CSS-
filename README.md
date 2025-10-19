@@ -3,11 +3,9 @@
 <br>
 <h2>Esse é meu primeiro projeto</h2>
 <h4>Observação :</h4>
-Esse Site foi criado com base em videos que assistie no YouTube, mostrando claramente minha paixão pela programação. Ainda nao tinha feito nenhum curso na área da programação. 
+Esse Site foi criado com base em videos que assistie no YouTube, mostrando claramente minha paixão pela programação. Ainda nao tinha feito nenhum curso na área da programação.
 
-<br>
-
-Site: https://1primeirosite.netlify.app/
+<p> Site: https://1primeirosite.netlify.app/ <p/>
 
 <h3>Tecnologias Ultilizadas:</h3>
 <br>
